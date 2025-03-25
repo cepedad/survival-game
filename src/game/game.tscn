@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://byndegf872juw"]
+
+[ext_resource type="AudioStream" uid="uid://cyp4ekemm5015" path="res://src/music/42b4b.ogg" id="1_e8vve"]
+
+[node name="Game" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="Player" type="CharacterBody2D" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_e8vve")
+bus = &"Music"
