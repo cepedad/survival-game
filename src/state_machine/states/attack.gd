@@ -27,11 +27,11 @@ func exit():
 	animation_tree["parameters/conditions/attack"] = false
 	#print("Exited Attack state") # Debug
 
-# Update direction based from StateMachine instructions, i.e. other states
+## Update direction based from StateMachine instructions, i.e. other states
 func _on_direction_changed(new_direction: Vector2): 
 	direction = new_direction
 
-# Handle animation finished signal
+## Handle animation finished signal
 func _on_animation_finished(animation_name: StringName):
 	# TODO: attack animations currently use name "swing_{direction}". This is
 		# a bit of hardcoding that will probably need to get solved later down

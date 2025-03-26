@@ -10,4 +10,3 @@ func update(_delta: float):
 
 func exit():
 	pass
-
